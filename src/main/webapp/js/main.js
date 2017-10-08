@@ -1,4 +1,3 @@
-
 var app = angular.module('website', [
     'ngRoute'
 ]);
@@ -8,6 +7,8 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
     $routeProvider
     	
         .when("/", {templateUrl: "templates/login.html", controller: "LoginCtrl"})
+        
+        .when("/menu", {templateUrl: "templates/menu.html", controller: "CadastroEmpresaCtrl"})
         
         .when("/cadastroEmpresa", {templateUrl: "templates/cadastroEmpresa.html", controller: "CadastroEmpresaCtrl"})
 
