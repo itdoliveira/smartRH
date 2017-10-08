@@ -1,0 +1,45 @@
+<div class="row">
+	<div class="box">
+
+		<div class="col-sm-6 col-md-4 col-md-offset-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<strong> Cadastro Usuario</strong>
+				</div>
+				<div class="panel-body"> 
+					<form>
+						<div class="form-group">
+							<label for="formGroupCliente">Nome do cliente</label> 
+							<input ng-model="empresa.nome" type="text" class="form-control" id="formGroupCliente" name="nome" placeholder="Digite o Nome do Cliente">
+						</div>
+						<div class="form-group">
+							<label for="formGroupEndereco">Endereco</label> 
+							<input ng-model="empresa.endereco" type="text"	class="form-control" id="formGroupEndereco" name="endereco"	placeholder="Digite o Endereco">
+						</div>
+						<div class="form-group">
+							<label for="formGroupTelefone">Telefone</label> 
+							<input ng-model="empresa.telefone" type="text"	class="form-control" id="formGroupTelefone" name="telefone"	placeholder="Digite o Telefone">
+						</div>
+						<div class="form-group">
+							<label for="formGroupEmail">E-mail</label> 
+							<input ng-model="empresa.email" type="text" class="form-control" id="formGroupEmail"	name="email" placeholder="Digite o E-mail">
+						</div>
+						<div class="form-group">
+							<label for="formGroupSenha">Senha</label> 
+							<input ng-model="empresa.senha" type="text" class="form-control" id="formGroupSenha"	name="senha" placeholder="Digite a Senha">
+						</div>
+						</br>
+						<div class="form-group">
+		
+							<a href="#/" class="btn btn-lg btn-primary pull-left">Voltar</a>
+		
+							<button ng-click="cadastrar(empresa)" type="button" class="btn btn-lg btn-primary pull-right">Cadastrar</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>
