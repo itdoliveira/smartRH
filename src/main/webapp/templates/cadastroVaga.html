@@ -1,0 +1,53 @@
+<div class="row">
+	<div class="box">
+
+		<div class="col-sm-6 col-md-4 col-md-offset-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<strong> Cadastro de vaga</strong>
+				</div>
+				<div class="panel-body">
+					<form>
+						<div class="form-group">
+							<label for="formGroupArea">Area da vaga </label> 
+							<input ng-model="vaga.area" type="text" class="form-control" id="formGroupArea" name="area" placeholder="Ex. FINANCEIRO">
+						</div>
+						<div class="form-group">
+							<label for="formGroupNome">Nome da vaga</label> 
+							<input ng-model="vaga.nome" type="text"	class="form-control" id="formGroupNome" name="nome"	placeholder="Digite o Nome da vaga">
+						</div>
+						<div class="form-group">
+							<label for="formGroupBeneficios">Beneficios</label> 
+							<input ng-model="vaga.beneficios" type="text"	class="form-control" id="formGroupBeneficios" name="beneficios"	placeholder="Digite os Beneficios">
+						</div>
+						<div class="form-group">
+							<label for="formGroupSalario">Salario</label> 
+							<input ng-model="vaga.salario" type="number" class="form-control" id="formGroupSalario"	name="salario" placeholder="Digite o salario">
+						</div>
+						<div class="form-group">
+							<label for="formGroupLocalidade">Localidade</label> 
+							<input ng-model="vaga.localidade" type="text" class="form-control" id="formGroupLocalidade"	name="localidade" placeholder="Digite a localidade">
+						</div>
+						<div class="form-group">
+							<label for="formGroupDisponibilidade">Disponibilidade</label> 
+							<input ng-model="vaga.disponibilidade" type="text" class="form-control" id="formGroupDisponibilidade"	name="disponibilidade" placeholder="Digite a Disponibilidade">
+						</div>		
+						<div class="form-group">
+							<label for="formGroupDescricao">Descri&ccedil;&atilde;o</label> 
+							<input ng-model="vaga.descricao" type="text" class="form-control" id="formGroupDescricao"	name="descricao" placeholder="Digite a Descri&ccedil;&atilde;o">
+						</div>					
+						</br>
+						<div class="form-group">
+		
+							<a href="#/" class="btn btn-lg btn-primary pull-left">Voltar</a>
+		
+							<button ng-click="cadastrar(candidato)" type="button" class="btn btn-lg btn-primary pull-right">Cadastrar</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>
