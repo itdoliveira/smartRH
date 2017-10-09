@@ -1,4 +1,4 @@
-app.factory('loginServices', ['$http', 'locationServices', function($http, locationServices) {
+app.factory('loginServices', ['$http', function($http) {
 			
         function listar(callback) {
             $http({

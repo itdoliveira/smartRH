@@ -1,11 +1,7 @@
 app.controller('CadastroEmpresaCtrl', function ($scope, $location, cadastroEmpresaServices) {
-
+	
 	$scope.empresa = {
-		"nome" : "",
-		"endereco" : "",
-		"telefone" : "",
-		"email" : "",
-		"senha" : ""
+		"nome" : ""
 	};
 
 	$scope.cadastrar = function(empresa) {
@@ -13,6 +9,5 @@ app.controller('CadastroEmpresaCtrl', function ($scope, $location, cadastroEmpre
 			$(".alert").alert();
         })
     };
-  
 
 });
