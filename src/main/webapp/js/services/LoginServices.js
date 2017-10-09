@@ -1,36 +1,17 @@
-app.factory('loginServices', ['$http', function($http) {
+app.factory('loginServices', ['$http', '$location', function($http, $location) {
 			
-        function listar(callback) {
+        function logar(logar ,callback) {
+        	
             $http({
                 method:'GET',
-                url: 'https://notepadcloud.herokuapp.com/nota/'
+                url: 'https://smart-rh.herokuapp.com/base/usuario?login='+logar.usuario+'&senha='+logar.senha
             }).then(function (data) {
+            	$location.path('#/');
                 if (callback) callback(data)
             });
         }
-
-        function pesquisarPor(nome, callback) {
-            $http({
-                method:'GET',
-                url:'https://notepadcloud.herokuapp.com/nota/titulo/' + nome
-            }).then(function (data) {
-                if (callback) callback(data)
-            });
-        }
-
-        function salvar(nota, callback) {
-            $http({
-                method:'POST',
-                url:'https://notepadcloud.herokuapp.com/nota/',
-                data:JSON.stringify(nota)
-            }).then(function (data) {
-                if (callback) callback(data)
-            });
-        }
-
+        
         return {
-            listar:listar,
-            salvar:salvar,
-            pesquisarPor:pesquisarPor
+            logar:logar
         };
     }])

@@ -1,26 +1,14 @@
-app.controller('LoginCtrl', function ($scope, $location, notepadServices) {
+app.controller('LoginCtrl', function ($scope, $location, loginServices) {
 
-	$scope.nota = {
-		"titulo" : "",
-		"texto" : ""
+	$scope.login = {
+		"usuario" : "",
+		"senha" : ""
 	};
-
-	$scope.pesquisar = function (nome) {
-		notepadServices.pesquisarPor(nome, function(nota) {
-			console.log(nota);
-            if(nota.data.length > 0)
-            	$scope.nota = nota.data[0];
-            else {
-            	$scope.nota.texto = "";
-            }
+	
+	$scope.logar = function (login) {
+		loginServices.logar(login, function(data) {
+			console.log(data);
         })
 	};
-
-	$scope.salvar = function(nota) {
-        notepadServices.salvar(nota, function() {
-            console.log("Sucesso");
-        })
-    };
-    
 
 });
