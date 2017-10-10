@@ -1,0 +1,43 @@
+
+
+		<div class="col-sm-6 col-md-4 col-md-offset-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<strong> Cadastro Nota</strong>
+				</div>
+				<div class="panel-body">
+					<form>
+						<div class="form-group">
+							<label for="formGroupNota">Nota</label> 
+							<input ng-model="nota.nota" type="text" class="form-control" id="formGroupNota" name="nota" placeholder="Digite a Nota">
+						</div>
+						<div class="form-group">
+							<label for="formGroupObs">Obs</label> 
+							<input ng-model="nota.obs" type="text"	class="form-control" id="formGroupObs" name="obs"	placeholder="Digite a Obs">
+						</div>
+						<div class="form-group">
+							<label for="formGroupCandidato">Candidato</label> 
+							<select name="repeatSelect" id="formGroupCandidato" ng-model="nota.candidato" class="form-control" >
+						      <option ng-repeat="option in candidato" value="{{option.id}}">{{option.nome}}</option>
+						    </select>
+						</div>
+						<div class="form-group">
+							<label for="formGroupProva">Prova</label> 
+							<select name="repeatSelect" id="formGroupProva" ng-model="nota.prova" class="form-control" >
+						      <option ng-repeat="option in prova" value="{{option.id}}">{{option.prova}}</option>
+						    </select>
+						</div>
+						
+						</br>
+						<div class="form-group">
+		
+							<a href="#/" class="btn btn-lg btn-primary pull-left">Voltar</a>
+		
+							<button ng-click="cadastrar(nota)" type="button" class="btn btn-lg btn-primary pull-right">Cadastrar</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	

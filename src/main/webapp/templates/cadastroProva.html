@@ -1,0 +1,46 @@
+
+
+		<div class="col-sm-6 col-md-4 col-md-offset-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<strong> Cadastro Prova</strong>
+				</div>
+				<div class="panel-body">
+					<form>
+						<div class="form-group">
+							<label for="formGroupDescricao">Descric&ccedil;&atilde;</label> 
+							<input ng-model="prova.descricao" type="text" class="form-control" id="formGroupDescricao" name="descricao" placeholder="Digite a Descric&ccedil;&atilde;">
+						</div>
+						<div class="form-group">
+							<label for="formGroupProva">Prova</label> 
+							<input ng-model="prova.prova" type="text"	class="form-control" id="formGroupProva" name="prova"	placeholder="Digite a Prova">
+						</div>
+						<div class="form-group">
+							<label for="formGroupResposta">Resposta</label> 
+							<input ng-model="prova.resposta" type="text"	class="form-control" id="formGroupResposta" name="resposta"	placeholder="Digite a Resposta">
+						</div>
+						<div class="form-group">
+							<label for="formGroupEmpresa">Empresa</label> 
+							<select name="repeatSelect" id="formGroupEmpresa" ng-model="prova.empresa" class="form-control" >
+						      <option ng-repeat="option in empresa" value="{{option.id}}">{{option.name}}</option>
+						    </select>
+						</div>
+						<div class="form-group">
+							<label for="formGroupVaga">Vaga</label> 
+							<select name="repeatSelect" id="formGroupVaga" ng-model="prova.vaga" class="form-control" >
+						      <option ng-repeat="option in vaga" value="{{option.id}}">{{option.name}}</option>
+						    </select>
+						</div>
+						</br>
+						<div class="form-group">
+		
+							<a href="#/" class="btn btn-lg btn-primary pull-left">Voltar</a>
+		
+							<button ng-click="cadastrar(prova)" type="button" class="btn btn-lg btn-primary pull-right">Cadastrar</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	
