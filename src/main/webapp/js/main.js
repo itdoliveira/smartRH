@@ -15,18 +15,18 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
         .when("/cadastroCandidato", {templateUrl: "templates/cadastroCandidato.html", controller: "CadastroCandidatoCtrl"})
       
         .when("/cadastroVaga", {templateUrl: "templates/cadastroVaga.html", controller: "CadastroVagaCtrl"})
-       
-        .when("/cadastroVaga", {templateUrl: "templates/cadastroVaga.html", controller: "CadastroVagaCtrl"})
         
         .when("/cadastroNota", {templateUrl: "templates/cadastroNota.html", controller: "CadastroNotaCtrl"})
         
-        .when("/listadeVagas", {templateUrl: "templates/listadeVagas.html", controller: "listadeVagasCtrl"})
-     
-        .when("/listadeCandidatos", {templateUrl: "templates/listadeCandidatos.html", controller: "listadeCandidatosCtrl"})
-            
-         .when("/listadeNotas", {templateUrl: "templates/listadeNotas.html", controller: "listadeNotasCtrl"})
+        .when("/cadastroProva", {templateUrl: "templates/cadastroProva.html", controller: "CadastroProvaCtrl"})
         
-        .when("/listadeProvas", {templateUrl: "templates/listadeProvas.html", controller: "listadeProvasCtrl"})
+        .when("/listadeVagas", {templateUrl: "templates/listadeVagas.html", controller: "CadastroVagaCtrl"})
+     
+        .when("/listadeCandidatos", {templateUrl: "templates/listadeCandidatos.html", controller: "CadastroCandidatoCtrl"})
+            
+         .when("/listadeNotas", {templateUrl: "templates/listadeNotas.html", controller: "CadastroNotaCtrl"})
+        
+        .when("/listadeProvas", {templateUrl: "templates/listadeProvas.html", controller: "CadastroProvaCtrl"})
         
         .when("/demo", {templateUrl: "templates/notepadsaas.html", controller: "NotepadCtrl"})
        
